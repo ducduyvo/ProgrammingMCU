@@ -1,0 +1,4 @@
+lab02-ex2.cpp:51:1:Menu::Menu()	16	static
+lab02-ex2.cpp:54:6:void Menu::print_menu(char*, int, int, int, int)	56	static
+lab02-ex2.cpp:62:6:void Menu::turn(int, int, int)	24	static
+lab02-ex2.cpp:82:5:int main()	336	static

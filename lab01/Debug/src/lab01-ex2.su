@@ -1,0 +1,19 @@
+core_cm3.h:1405:22:void NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+core_cm3.h:1532:26:uint32_t SysTick_Config(uint32_t)	16	static
+clock_15xx.h:500:20:void Chip_Clock_SetSysTickClockDiv(uint32_t)	16	static
+iocon_15xx.h:95:20:void Chip_IOCON_PinMuxSet(LPC_IOCON_T*, uint8_t, uint8_t, uint32_t)	24	static
+gpio_15xx.h:121:20:bool Chip_GPIO_GetPinState(LPC_GPIO_T*, uint8_t, uint8_t)	16	static
+gpio_15xx.h:146:20:void Chip_GPIO_SetPinDIROutput(LPC_GPIO_T*, uint8_t, uint8_t)	16	static
+gpio_15xx.h:158:20:void Chip_GPIO_SetPinDIRInput(LPC_GPIO_T*, uint8_t, uint8_t)	16	static
+atomic_base.h:80:3:constexpr std::memory_order std::operator&(std::memory_order, std::__memory_order_modifier)	16	static
+lab01-ex2.cpp:30:6:void SysTick_Handler()	8	static
+lab01-ex2.cpp:37:6:void Sleep(int)	16	static
+lab01-ex2.cpp:60:1:DigitalIoPin::DigitalIoPin(int, int, bool, bool, bool)	24	static
+lab01-ex2.cpp:103:6:bool DigitalIoPin::read()	16	static
+lab01-ex2.cpp:107:6:void lighting(DigitalIoPin&, int&, int)	24	static
+lab01-ex2.cpp:121:5:int main()	72	static
+atomic_base.h:261:7:std::__atomic_base<_IntTp>::operator std::__atomic_base<_IntTp>::__int_type() const volatile [with _ITp = int]	24	static
+atomic_base.h:291:7:std::__atomic_base<_IntTp>::__int_type std::__atomic_base<_IntTp>::operator--(int) volatile [with _ITp = int]	32	static
+atomic_base.h:272:7:std::__atomic_base<_IntTp>::__int_type std::__atomic_base<_IntTp>::operator=(std::__atomic_base<_IntTp>::__int_type) volatile [with _ITp = int]	32	static
+lab01-ex2.cpp:169:1:void __static_initialization_and_destruction_0(int, int)	16	static
+lab01-ex2.cpp:169:1:cpp)	8	static
