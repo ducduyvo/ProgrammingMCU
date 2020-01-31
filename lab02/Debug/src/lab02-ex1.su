@@ -1,6 +1,0 @@
-core_cm3.h:1405:22:void NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
-core_cm3.h:1532:26:uint32_t SysTick_Config(uint32_t)	16	static
-clock_15xx.h:500:20:void Chip_Clock_SetSysTickClockDiv(uint32_t)	16	static
-lab02-ex1.cpp:93:1:Printer::Printer()	16	static
-lab02-ex1.cpp:97:6:void Printer::print(char*, int, const char*, int)	24	static
-lab02-ex1.cpp:103:5:int main()	320	static
