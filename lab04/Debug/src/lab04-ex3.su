@@ -1,0 +1,20 @@
+core_cm3.h:1335:22:void NVIC_DisableIRQ(IRQn_Type)	16	static
+core_cm3.h:1405:22:void NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+core_cm3.h:1532:26:uint32_t SysTick_Config(uint32_t)	16	static
+iocon_15xx.h:95:20:void Chip_IOCON_PinMuxSet(LPC_IOCON_T*, uint8_t, uint8_t, uint32_t)	24	static
+i2c_common_15xx.h:238:20:void Chip_I2C_SetClockDiv(LPC_I2C_T*, uint32_t)	16	static
+i2cm_15xx.h:126:20:void Chip_I2CM_Enable(LPC_I2C_T*)	16	static
+atomic_base.h:80:3:constexpr std::memory_order std::operator&(std::memory_order, std::__memory_order_modifier)	16	static
+lab04-ex3.cpp:41:6:void SysTick_Handler()	8	static
+lab04-ex3.cpp:48:6:void Sleep(int)	16	static
+lab04-ex3.cpp:54:13:void Init_I2C_PinMux()	8	static
+lab04-ex3.cpp:66:13:void setupI2CMaster()	8	static
+lab04-ex3.cpp:81:13:void SetupXferRecAndExecute(uint8_t, uint8_t*, uint16_t, uint8_t*, uint16_t)	24	static
+lab04-ex3.cpp:108:5:int main()	72	static
+lab04-ex3.cpp:177:6:void handleEvent()	32	static
+lab04-ex3.cpp:219:6:void show(uint8_t)	64	static
+atomic_base.h:261:7:std::__atomic_base<_IntTp>::operator std::__atomic_base<_IntTp>::__int_type() const volatile [with _ITp = int]	24	static
+atomic_base.h:291:7:std::__atomic_base<_IntTp>::__int_type std::__atomic_base<_IntTp>::operator--(int) volatile [with _ITp = int]	32	static
+atomic_base.h:272:7:std::__atomic_base<_IntTp>::__int_type std::__atomic_base<_IntTp>::operator=(std::__atomic_base<_IntTp>::__int_type) volatile [with _ITp = int]	32	static
+lab04-ex3.cpp:234:1:void __static_initialization_and_destruction_0(int, int)	16	static
+lab04-ex3.cpp:234:1:cpp)	8	static

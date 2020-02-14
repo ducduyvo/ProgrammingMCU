@@ -1,0 +1,12 @@
+core_cm3.h:1335:22:NVIC_DisableIRQ	16	static
+core_cm3.h:1405:22:NVIC_SetPriority	16	static
+core_cm3.h:1532:26:SysTick_Config	16	static
+iocon_15xx.h:95:20:Chip_IOCON_PinMuxSet	24	static
+i2c_common_15xx.h:238:20:Chip_I2C_SetClockDiv	16	static
+i2cm_15xx.h:126:20:Chip_I2CM_Enable	16	static
+i2cm_polling.c:73:13:Init_I2C_PinMux	8	static
+i2cm_polling.c:86:13:setupI2CMaster	8	static
+i2cm_polling.c:102:13:SetupXferRecAndExecute	24	static
+i2cm_polling.c:122:13:ReadTemperatureI2CM	24	static
+i2cm_polling.c:191:6:SysTick_Handler	4	static
+i2cm_polling.c:206:5:main	16	static

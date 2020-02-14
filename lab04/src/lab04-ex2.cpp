@@ -46,7 +46,7 @@ void Sleep(int ms) {
 
 static I2CM_XFER_T i2cmXferRec;
 /* I2C clock is set to 1.8MHz */
-#define I2C_CLK_DIVIDER         (1440)
+#define I2C_CLK_DIVIDER         (40)
 /* 100KHz I2C bit-rate */
 #define I2C_BITRATE         (100000)
 /* Standard I2C mode */
@@ -54,7 +54,7 @@ static I2CM_XFER_T i2cmXferRec;
 
 #if defined(BOARD_NXP_LPCXPRESSO_1549)
 /** 7-bit I2C addresses of Temperature Sensor */
-#define I2C_TEMP_ADDR_7BIT  (0x49)
+#define I2C_TEMP_ADDR_7BIT  (0x48)
 #endif
 
 #if defined(BOARD_KEIL_MCB1500)
@@ -110,13 +110,12 @@ static void SetupXferRecAndExecute(uint8_t devAddr, uint8_t *txBuffPtr,
 /* Master I2CM receive in polling mode */
 #if defined(BOARD_NXP_LPCXPRESSO_1549)
 /* Function to read LM75 I2C temperature sensor and output result */
-
-static uint8_t ReadTemperatureI2CM() {
+static void WriteConfig() {
 	Printer printer;
 	uint8_t temperature;
 	uint8_t config;
 	uint8_t tempAddress = 0;
-	uint8_t confAddress = 1;
+	uint8_t confAddress[2] = { 1, 128 };
 
 	/* Read LM75 temperature sensor */
 	SetupXferRecAndExecute(
@@ -125,17 +124,54 @@ static uint8_t ReadTemperatureI2CM() {
 	I2C_TEMP_ADDR_7BIT,
 
 	/* Transmit one byte, the config register address */
-	&confAddress, 1,
+	confAddress, 2,
 
 	/* Receive back one byte, the contents of the config register */
 	&config, 1);
-	printer.print("%d\n", config);
+
+	printer.print("The standby mode %d\n", config);
+}
+static void WriteNormal() {
+	Printer printer;
+	uint8_t temperature;
+	uint8_t config;
+	uint8_t tempAddress = 0;
+	uint8_t confAddress[2] = { 1, 0 };
+
+	SetupXferRecAndExecute( I2C_TEMP_ADDR_7BIT, &confAddress[0], 1, &config, 1);
+	printer.print("The normal mode %d\n", config);
+	if ((config & 0x80) != 0) {
+		SetupXferRecAndExecute(I2C_TEMP_ADDR_7BIT, &tempAddress, 1, &config, 1);
+
+		printer.print("The normal mode \n");
+	}
+}
+static void ReadTemperatureI2CM() {
+	Printer printer;
+	uint8_t temperature;
+	uint8_t config;
+	uint8_t tempAddress = 0;
+	uint8_t confAddress[2] = {1,1};
+
+	/* Read LM75 temperature sensor */
+	SetupXferRecAndExecute(
+
+	/* The LM75 I2C bus address */
+	I2C_TEMP_ADDR_7BIT,
+
+	/* Transmit one byte, the config register address */
+	confAddress, 2,
+
+	/* Receive back one byte, the contents of the config register */
+	&config, 1);
+	printer.print("hello %d\n", config);
 
 	/* Test for valid operation */
 	if (i2cmXferRec.status == I2CM_STATUS_OK) {
 		/* test if the device is ready */
-		if ((config & 0x40)) {
+		if (((config & 0x40) != 0)) {
 			/* Read LM75 temperature sensor */
+
 			SetupXferRecAndExecute(
 			/* The LM75 I2C bus address */
 			I2C_TEMP_ADDR_7BIT,
@@ -143,17 +179,12 @@ static uint8_t ReadTemperatureI2CM() {
 			&tempAddress, 1,
 			/* Receive back one byte, the contents of the temperature register */
 			&temperature, 1);
-			printer.print("The temperature now: %d °C\n", (int8_t) temperature);
+			printer.print("Temperature: %d °C\n", (int8_t) temperature);
 
 		}
 
 		else {
-			uint8_t confAddress1[2] = { 1, 0 };
 			printer.print("Error, the device is not ready\n");
-			// in standby mode so we have to put it to normal mode
-			SetupXferRecAndExecute(I2C_TEMP_ADDR_7BIT, confAddress1, 2, &config, 1);
-
-
 		}
 	} else {
 		printer.print("Error\n");
@@ -185,13 +216,19 @@ int main(void) {
 
 	DigitalIoPin sw3(1, 9, true, true, true);
 	while (1) {
-		if (sw3.read()) {
+		if (!sw3.read() && counter == 0) {
+			Sleep(250);
+			WriteConfig();
+		} else if (sw3.read()) {
 			if (sw3.read()) {
 				while (sw3.read())
 					;
 			}
+			WriteNormal();
+			Sleep(250);
 			ReadTemperatureI2CM();
 			Sleep(5);
+			counter = 4750;
 		}
 
 	}
