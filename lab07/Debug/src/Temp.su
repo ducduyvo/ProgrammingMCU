@@ -1,0 +1,12 @@
+iocon_15xx.h:95:20:void Chip_IOCON_PinMuxSet(LPC_IOCON_T*, uint8_t, uint8_t, uint32_t)	24	static
+i2c_common_15xx.h:238:20:void Chip_I2C_SetClockDiv(LPC_I2C_T*, uint32_t)	16	static
+i2cm_15xx.h:126:20:void Chip_I2CM_Enable(LPC_I2C_T*)	16	static
+Temp.h:37:13:void Init_I2C_PinMux()	8	static
+Temp.cpp:12:6:void setupI2CMaster()	8	static
+Temp.cpp:27:13:void SetupXferRecAndExecute(uint8_t, uint8_t*, uint16_t, uint8_t*, uint16_t)	24	static
+Temp.cpp:40:9:uint8_t readByte(uint8_t)	32	static
+Temp.cpp:48:9:uint8_t writeByte(uint8_t, uint8_t)	32	static
+Temp.cpp:55:6:bool unlockSensor()	16	static
+Temp.cpp:78:6:bool lockSensor()	16	static
+Temp.cpp:101:1:void __static_initialization_and_destruction_0(int, int)	16	static
+Temp.cpp:101:1:cpp)	8	static

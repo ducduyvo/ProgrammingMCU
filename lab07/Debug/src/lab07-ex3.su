@@ -1,0 +1,30 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+core_cm3.h:1323:22:void NVIC_EnableIRQ(IRQn_Type)	16	static
+core_cm3.h:1375:22:void NVIC_ClearPendingIRQ(IRQn_Type)	16	static
+core_cm3.h:1405:22:void NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+core_cm3.h:1532:26:uint32_t SysTick_Config(uint32_t)	16	static
+sysctl_15xx.h:185:20:void Chip_SYSCTL_PeriphReset(CHIP_SYSCTL_PERIPH_RESET_T)	16	static
+clock_15xx.h:500:20:void Chip_Clock_SetSysTickClockDiv(uint32_t)	16	static
+clock_15xx.h:656:24:uint32_t Chip_Clock_GetWDTOSCRate()	4	static
+pinint_15xx.h:101:20:void Chip_PININT_SetPinModeEdge(LPC_PIN_INT_T*, uint32_t)	16	static
+pinint_15xx.h:171:20:void Chip_PININT_EnableIntLow(LPC_PIN_INT_T*, uint32_t)	16	static
+pinint_15xx.h:245:20:void Chip_PININT_ClearIntStatus(LPC_PIN_INT_T*, uint32_t)	16	static
+wwdt_15xx.h:98:20:void Chip_WWDT_SetTimeOut(LPC_WWDT_T*, uint32_t)	16	static
+wwdt_15xx.h:110:20:void Chip_WWDT_Feed(LPC_WWDT_T*)	16	static
+wwdt_15xx.h:124:20:void Chip_WWDT_SetWarning(LPC_WWDT_T*, uint32_t)	16	static
+wwdt_15xx.h:138:20:void Chip_WWDT_SetWindow(LPC_WWDT_T*, uint32_t)	16	static
+wwdt_15xx.h:154:20:void Chip_WWDT_SetOption(LPC_WWDT_T*, uint32_t)	16	static
+wwdt_15xx.h:178:20:void Chip_WWDT_Start(LPC_WWDT_T*)	16	static
+wwdt_15xx.h:189:24:uint32_t Chip_WWDT_GetStatus(LPC_WWDT_T*)	16	static
+inmux_15xx.h:221:20:void Chip_INMUX_PinIntSel(uint8_t, uint8_t, uint8_t)	16	static
+lab07-ex3.cpp:47:7:void SysTick_Handler()	8	static
+lab07-ex3.cpp:62:7:void PIN_INT0_IRQHandler()	8	static
+lab07-ex3.cpp:68:7:void PIN_INT1_IRQHandler()	8	static
+lab07-ex3.cpp:74:7:void PIN_INT2_IRQHandler()	8	static
+lab07-ex3.cpp:81:6:void Sleep(int)	16	static
+lab07-ex3.cpp:177:28:main()::<lambda()>	112	static
+lab07-ex3.cpp:177:28:static void main()::<lambda()>::_FUN()	8	static
+lab07-ex3.cpp:177:28:main()::<lambda()>::operator void (*)()() const	16	static
+lab07-ex3.cpp:91:5:int main()	248	static
+lab07-ex3.cpp:273:1:void __static_initialization_and_destruction_0(int, int)	16	static
+lab07-ex3.cpp:273:1:cpp)	8	static

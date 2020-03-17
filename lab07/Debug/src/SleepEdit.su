@@ -1,0 +1,2 @@
+SleepEdit.cpp:10:1:SleepEdit::SleepEdit()	16	static
+SleepEdit.cpp:12:6:void SleepEdit::SleepForSystem()	16	static

@@ -1,0 +1,3 @@
+printer.cpp:12:1:Printer::Printer()	16	static
+printer.cpp:16:6:)	284	static
+printer.cpp:25:6:void Printer::print_cursor()	16	static

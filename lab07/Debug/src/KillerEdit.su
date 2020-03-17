@@ -1,0 +1,2 @@
+KillerEdit.cpp:10:1:KillerEdit::KillerEdit()	16	static
+KillerEdit.cpp:13:6:void KillerEdit::KillerForSystem()	16	static

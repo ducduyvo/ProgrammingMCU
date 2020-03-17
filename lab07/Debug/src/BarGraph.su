@@ -1,0 +1,5 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+BarGraph.cpp:26:1:BarGraph::BarGraph(LiquidCrystal*, int, bool, int, int, bool)	32	static
+BarGraph.cpp:51:1:BarGraph::~BarGraph()	16	static
+BarGraph.cpp:51:1:virtual BarGraph::~BarGraph()	16	static
+BarGraph.cpp:56:6:void BarGraph::draw(int)	32	static

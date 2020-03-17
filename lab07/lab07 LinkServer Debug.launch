@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.crt.dsfdebug.crtmcu.launchType">
 <stringAttribute key=".gdbinit" value=""/>
-<stringAttribute key="InstructionTraceInfo" value="eJzFVl1v0zAUfedXRHmHNm2XFYmCXMelEflS7GyIFytrvVJIk5I4MP49N06bLa33IYHEHiZ/HJ9777mnjt99uNtlxk9RVtsin5nWm6FpiHxVrLf5ZmYmbPF6an54/+qdkDshbxwh021WwZyl5UbIhUhlXYrK8NNvRXl1ZAEOf5v3FuAIYf48rYSB1ms4Us3M1xdj2x5O7MuRaUSwJHI5M2VZC3MAcOeancOntj21bB3c1bFPL4dvLS07YXNdMsOLy4fst2lWtXj/DG/pcSDSL3kCHdnTydga20PtEVamK7Go81xk/XQu3tqT6VCrzS+Ji1LQ7eYrDHb7Iod9o4mqVQtXXrH6PjODOsvasWkARSw2VAIN9Oe//Zltp2+PRmpq6CXf7q+gyLRMIdvKCOrdjShn5kRJQev9viilWBt4t/dTufp60MnAv1eZwEWdywat1gDfyHWwseGkMm3mx24Y3jb/bnUzP73z0wp0sy7MLupQRdWztHEPJO1Ey2E9wfHyTEb/hGWsWAadjK27orK43WZwBxz0q9o2cMxiz7hKs1oclRg8gh486OoBdm5Z2Aju9kTucLU6t+/xbjja97oo1519xU29icWPrjggoTItJTh6r24gmGVZt61mnvgpMrXJtjtRyfSBVOpXiO5PtBfW4r6Ce6O5zsyEPdeJeRQTSgJ24sQGwGKECacMxQz+h9ET0CWifOEuwkXieZpt5DESB4i5V4TPYxTgJY8Q/kS0UZeJP+fjEadJFIWxFuL6BNLyIw6cCfI4CXDouMFHDTYmToKJw3GYBJAEtzQYjAKeUMKJPwekC0VfI4aXUegGjGrwDmKIIwfEw2GTRMiOyRJHW73HY/LRpRCfwgg5aO6R1nr9Binz9TulllTDVaZtFadJ9UFuQFmc+BCJhkmMySPoSYtWRTtndXM3iJKz6vuBfN8hIDyo+hR4dIjzWXnAewmxErjRFsWIhc+U2xAHTQH9CHyeUE7dL+SRrA7lN67lDonY8tkgijtM2LPp4xCa9Jm9uIIIubHyE6H0r8umxCO4Oz3oLDXorqnmqQGDl3x9D48PzfV18tk/YxMauuNrQPMxb8xP2eLkYn46gEL0HnHNSv+Z9wduwxnLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
 <booleanAttribute key="attach" value="false"/>
 <stringAttribute key="bootrom.stall" value=""/>
 <stringAttribute key="com.crt.ctrlcenter.OFSemuDetails" value="LinkServer"/>
 <booleanAttribute key="com.crt.ctrlcenter.crtInit" value="true"/>
 <stringAttribute key="com.crt.ctrlcenter.currentWireType" value="SWD"/>
 <booleanAttribute key="com.crt.ctrlcenter.mainBreakIsHardware" value="true"/>
-<booleanAttribute key="com.crt.ctrlcenter.saveState" value="true"/>
 <stringAttribute key="com.crt.ctrlcenter.serialNumber" value="LinkServerNXP SemiconductorsLPC-LINK2 CMSIS-DAP V5.224ORAVCQOQ"/>
 <mapAttribute key="com.crt.ctrlcenter.symbolsGroupSettings"/>
 <intAttribute key="com.crt.ctrlcenter.version" value="6"/>
@@ -69,13 +67,13 @@
 <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="gdb"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/lab06.axf"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="lab06"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/lab07.axf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="lab07"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.crt.advproject.config.exe.debug.273197818"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.crt.advproject.config.exe.debug.523456670"/>
 <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="false"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/lab06"/>
+<listEntry value="/lab07"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
